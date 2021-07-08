@@ -1,0 +1,6 @@
+How to run
+1. Preprocess
+python preprocess.py --save_path data/preprocessed/ --data_path data/ --bin_duration 0.1
+
+2. Train
+python train_snn.py --data_dir data/preprocessed --lr 0.01

@@ -1,0 +1,16 @@
+simulation:
+  Ts: 1
+  tSample: 26
+neuron:
+  type: SRMALPHA
+  theta: 4
+  tauSr: 4.0
+  tauRef: 1.0
+  scaleRef: 2
+  tauRho: 1
+  scaleRho: 1
+training:
+  error:
+    type: NumSpikes
+    tgtSpikeRegion: {start: 0, stop: 26}
+    tgtSpikeCount: {true: 15, false: 3}
